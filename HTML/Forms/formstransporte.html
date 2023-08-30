@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de transporte</title>
+</head>
+<body bgcolor="silver">
+    <header>
+        <h1>Formulario de transporte</h1>
+    </header>
+    <article>
+
+        <form action="mailto:pyromagicdark@gmail.com" method="post" 
+        oninput="resultado.value = parseInt(valor01.value) +  parseInt(valor02.value)" >
+       
+            <fieldset>
+                <legend><strong>Identificão</strong></legend>
+                <br>
+            <label for="Cnome">Nome:</label>
+            <input type="text" name="nome" id="Cnome" size="50" required placeholder="Seu Nome">
+            <br><br>
+
+            <label for="email">e-Mail</label>
+            <input type="email" id="email" name="email" size="50" placeholder="exemplo@exemplo.com">
+            <br><br>
+
+            <p>Você mora:</p>
+            <input type="radio" name="lugar" id="city" value="C">
+            <label for="city">Cidade</label>
+            <br>
+
+            <input type="radio" name="lugar" id="downtown" value="D">
+            <label for="downtown">interior</label>
+            </fieldset>
+            <br><br>
+
+        <fieldset>
+            <legend><strong>Informações Extra:</strong></legend>
+            <p>Qual meio de transporte você usa?</p>
+            <input type="checkbox" name="transporte1" id="bike" value="bike">
+            <label for="bike">Bicicleta</label>
+            <br>
+
+            <input type="checkbox" name="transporte2" id="car" value="car">
+            <label for="car">Carro</label>
+            <br>
+
+            <input type="checkbox" name="transporte3" id="metro" value="metro">
+            <label for="metro">Metrô</label>
+            <br>
+
+            <input type="checkbox" name="transporte4" id="bus" value="bus">
+            <label for="bus">ônibus</label>
+            <br><br>
+        
+            <!--select cria uma lista de opções-->
+
+
+            <label for="game">Escolha seu tipo de jogo: &nbsp;</label>
+            <select name="game" id="game">
+                <!--option é as opções da lista-->
+                <!--velue são os valores de escolha-->
+
+                <option value="fps">FPS</option>
+                <option value="adv">Adventure</option>
+                <option value="rpg">RPG</option>
+                <option value="moba">M.O.B.A</option>
+                <option value="puzzle">puzzle</option>
+
+            </select>
+            <br><br><br>
+            <!--Aqui inicia o datalist ou lista de dados-->
+            <label for="região">Escolha sua cidade: &nbsp;</label>
+            <input list="cidade" name="city2" id="região" placeholder="Digite sua cidade" autocomplete="on">
+            <datalist id="cidade">
+                
+                <option value="Recife"></option>
+                <option value="Olinda"></option>
+                <option value="Cabo"></option>
+                <option value="Paulista"></option>
+                <option value="Moreno"></option>
+                <option value="Camaragibe"></option>
+                <option value="Jaboatão dos guararapes"></option>
+                <option value="Cabrobó"></option> 
+
+            </datalist>
+        </fieldset>
+            <br><br>
+            <fieldset>
+                <legend><strong>Exemplo range e outplate:</strong></legend>
+            <label for="valor01">O quanto Você curtiu o Formulario:</label>
+            <br><br>
+           0 
+           <input type="range" id="valor01" name="valor01"> 
+           100 +
+           <input type="number" name="valor02" id="valor02" value="0">
+           O seu voto é
+           <output name="resultado" id="resultado"></output>
+           <br>
+        </fieldset>
+           <br>
+           <fieldset>
+            <legend><strong>Sua opinião</strong></legend>
+           <p>sugestões, elogios e criticas</p>
+           <textarea name="msg" id="" cols="30" rows="10" placeholder="Escreva Aqui" required></textarea>
+           <br><br>
+           <input type="submit" value="Enviar">
+        </fieldset>
+           <hr>
+            <footer>
+                <small style="color:darkslategray">by jose igor &copy;</small>
+            </footer>
+
+
+        </form>
+    </article>
+</body>
+</html>

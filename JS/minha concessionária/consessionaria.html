@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declaração das variáveis
+
+        let user;
+        let entrada;
+        let objetivo = ['Comprar', 'Alugar'];
+        let veiculo = ['Moto', 'Carro','Bicicleta'];
+        let tabelacompra = [10000, 50000, 1000];
+        let tabelaaluguel = [100, 500, 10];
+
+        //Recebendo valores do cliente
+        user = prompt('Qual seu nome?');
+        
+        let seuobjetivo = prompt('Você deseja:\n [0]- Comprar\n[1]- Alugar\n');
+
+        let veiculoescolhido = prompt('[0]- Moto\n[1]- Carro\n[2] - Bicicleta');
+
+        entrada = prompt('Qual o valor de entrada?');
+
+
+        //exibindo pedido do cliente
+
+        document.write(`Olá ${user} seu veículo escolhido foi ${veiculo[+veiculoescolhido]}
+        , e o seu objetivo é ${objetivo[seuobjetivo]} com a entrada de R$${+entrada}, para comprar, o valor será R$${tabelacompra[+veiculoescolhido]}
+        , e para alugar será R$${tabelaaluguel[+veiculoescolhido]}`); 
+        
+    
+
+
+    </script>
+</body>
+</html>

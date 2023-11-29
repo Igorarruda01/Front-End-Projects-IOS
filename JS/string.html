@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declaração de variáveis
+
+let cliente;
+let pedido = false;
+let pizza = ['Charque', 'Queijo Coalho','Cream cheese'];
+let pizzaescolhida;
+
+//solicitar e armazenar o nome do cliente an variavel cliente;
+cliente = prompt('Qual seu nome?');
+
+
+
+//apresentar os sabores e entender qual o cliente prefere
+pizzaescolhida = prompt('[0]- Charque\n[1]- Queijo Coalho\n[2] - Cream cheese');
+
+//Mostrar qual pedido foi escolhido
+
+document.write(`Olá ${cliente} sua pizza ${pizza[+pizzaescolhida]} está sendo preparada```);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+<body>
+    <script>
+        //Declaração das variaveis
+        let salve, texto1, rimaNycolas, happy;
+
+        //iniciar as variaveiis
+        salve = 'Ola vamos começar a aprender javascript'
+        texto1 = 'Osh hahha isso não parree! meteu o loko'
+        rimaNycolas = 'ih eu sei hahãn sei não o que rima com C'
+        happy = 'comida o pensamento vai em você e tentativas em vão tentar tirar você do coração '
+        //apresentar o conteudo no documento
+        //modelo antigo
+        document.write(salve + '<br>' +texto1);
+        //versão mais atual, template string
+        document.write(`<br><br>`);
+        //possibilidade de interpolação
+        document.write(`${salve} Com o IOS`);
+        document.write('olhe no  console');
+
+        //metodo string 
+        console.log(salve.length);//lenght retorna o
+        console.log(texto1.substring(28,33));//retorna parte da string
+
+        console.log(rimaNycolas.split(' '))//o split separa a frase em palavras 
+
+        let novoTexto = rimaNycolas.split(' ');//retorna o array em palavras
+        console.log(novoTexto[2]);
+        console.log(happy.split('e'));
+
+        console.log(rimaNycolas.replace('sei','Não sei'));
+        happy='      oi..    '
+        console.log(happy);
+        console.log(happy.trim());
+
+        
+    </script>
+</body>
+</html>

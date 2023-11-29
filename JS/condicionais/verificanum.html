@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var num = prompt('Digitar um número')
+        const numInteiro = parseInt(num)
+
+       
+        while (num == undefined){
+            num = prompt('Digite um num valido');
+        }
+        if (numInteiro == 0) {
+           alert(`O numero digitado ${numInteiro} é neutro`)
+        }
+
+        
+
+       else if (numInteiro > 0){
+         alert(`O numero digitado ${numInteiro} é positivo`) 
+         document.write(`O numero digitado ${numInteiro}`)
+
+        }
+
+        else{
+            alert(`O numero digitado ${numInteiro} é negativo`)
+        }
+
+    </script>
+
+</body>
+</html>

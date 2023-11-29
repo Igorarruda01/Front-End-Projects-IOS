@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .baby{
+            cursor: pointer;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //declarando variaveis
+        var Acessoglobal;//É o tipo que pode ser acessado em todo programa
+        let Acessolocal;//pode sere acessada apenas no escopo em que nacseu
+        //variavel do tipo const precisa ser inicializada
+        const naoMuda = 'Esse valor é imutavel';//não pode ser alterada
+
+        let nome, idade, altura;
+        let num1 = 3, num2 = 6, num3 = 9;
+         var txt1 = 'Que', txt2 = 'calor', txt3 = 'danado'
+         const cachorro = 'AuAu'
+
+
+        nome = prompt('Diga seu nome')
+        idade = prompt('Diga sua idade')
+
+         window.document.write('<h3>Salveee,'+ nome + '!</h3>');
+         //modo abreviado
+         document.write(nome + ',você tem:' +idade+'anos' + '<br>');
+         document.write('<br>');
+         document.write('Clique na imagem para saber quantos filhos<br> voce vai ter')
+         document.write('<img class="baby"" src="Babyhuey.JPG"/>')
+
+         //Armazenando a imagem no lado JS
+         let imgClique = document.querySelector('.baby');
+         imgClique.addEventListener('click',function(){
+             let qntdFilhos = Math.floor(Math.random() *10);
+             document.write(nome +'você apesar de ja ter ' + idade + 'anos');
+             document.write('<br> seu karma é ter' + qntdFilhos + 'de filhos correndo atras de você ')
+             document.write('<br> HAHAHAH!')
+
+         })
+
+        
+
+         
+
+    </script>
+</body>
+</html>
